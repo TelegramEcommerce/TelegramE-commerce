@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Telegram E-commerce | Product, Guides, Pricing</title>
+  <meta name="description" content="Telegram E-commerce: complete feature overview, setup guides, pricing plans, and operational workflows for bot-powered shops." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-shape bg-shape-a" aria-hidden="true"></div>
+  <div class="bg-shape bg-shape-b" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a href="#top" class="brand">
+        <img src="logo.jpg" alt="Telegram E-commerce logo" class="brand-logo" />
+        <span>Telegram E-commerce</span>
+      </a>
+      <div class="header-actions">
+        <nav class="site-nav" id="mainNav">
+          <a href="#features">Features</a>
+          <a href="#guides">Guides</a>
+          <a href="#admin-buttons">Admin Buttons</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#plans">Plan Limits</a>
+          <a href="#faq">FAQ</a>
+        </nav>
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme" aria-pressed="false">Dark</button>
+        <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">Menu</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="hero-copy" data-reveal>
+        <p class="eyebrow">Build and run your Telegram shop</p>
+        <h1>All-in-one Telegram E-commerce platform</h1>
+        <p>
+          Launch shop bots, manage catalog and orders, collect payment proof, automate support,
+          broadcast updates, track statistics, and scale with plan-based growth controls.
+        </p>
+        <div class="hero-actions">
+          <a href="#guides" class="btn btn-primary">Read Setup Guide</a>
+          <a href="#pricing" class="btn btn-ghost">View Pricing</a>
+        </div>
+      </div>
+      <div class="hero-stats" data-reveal>
+        <article class="stat-card">
+          <h3>Shop Core</h3>
+          <p>Categories, products, stock, cart, checkout, orders, deep links.</p>
+        </article>
+        <article class="stat-card">
+          <h3>Admin Ops</h3>
+          <p>Order review, payment methods, content updates, automation, broadcasts.</p>
+        </article>
+        <article class="stat-card">
+          <h3>Growth</h3>
+          <p>Affiliate program, multi-bot scaling, multilingual UX, analytics export.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section container" id="features">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow">Feature Library</p>
+        <h2>Everything your Telegram commerce bot can do</h2>
+        <input id="featureSearch" type="search" placeholder="Search features (e.g. payment, affiliate, FAQ)" aria-label="Search features" />
+      </div>
+      <div class="feature-grid" id="featureGrid">
+        <article class="feature-card" data-tags="catalog products categories stock media deep link">
+          <h3>Catalog & Product Experience</h3>
+          <p>Create categories and products with photos/videos, stock control, quantity selector, add-to-cart, and buy-now flow.</p>
+        </article>
+        <article class="feature-card" data-tags="checkout payment qr proof order review">
+          <h3>Checkout & Payment Proof</h3>
+          <p>Customers choose payment method, view account/QR details, upload proof, and submit for admin review.</p>
+        </article>
+        <article class="feature-card" data-tags="orders confirmation status notifications">
+          <h3>Order Lifecycle</h3>
+          <p>Pending review queue, admin confirm/reject actions, customer status notification, order history, and order detail pages.</p>
+        </article>
+        <article class="feature-card" data-tags="admin panel content captions posters">
+          <h3>Two Admin Panels</h3>
+          <p>Separate command centers for operations and shop configuration: orders, captions, posters, categories, products, and payments.</p>
+        </article>
+        <article class="feature-card" data-tags="broadcast global campaigns messages">
+          <h3>Broadcast Engine</h3>
+          <p>Send rich broadcasts to all users of a bot, plus super-admin global broadcasts across active bots.</p>
+        </article>
+        <article class="feature-card" data-tags="faq automation autoreply custom commands">
+          <h3>FAQ & Automation</h3>
+          <p>Build custom commands, attach them as auto-reply FAQ buttons, and provide instant reusable support responses.</p>
+        </article>
+        <article class="feature-card" data-tags="profile language currency settings">
+          <h3>User Profile & Localization</h3>
+          <p>Profile completion checks, editable user details, English/Myanmar language toggle, and MMK currency mode.</p>
+        </article>
+        <article class="feature-card" data-tags="affiliate referral commission">
+          <h3>Affiliate Program</h3>
+          <p>Global referral links, referral tracking, 10% commission logic on upgrades, and super-admin payout management.</p>
+        </article>
+        <article class="feature-card" data-tags="multi bot clone create bot token">
+          <h3>Multi-Bot Infrastructure</h3>
+          <p>Users can create and manage multiple shop bots with plan-based bot limits and token validation flow.</p>
+        </article>
+        <article class="feature-card" data-tags="deals promotions news content blocks">
+          <h3>Deals, Promotions & News</h3>
+          <p>Dedicated updates area with promotions/news content blocks and plan-aware visibility controls.</p>
+        </article>
+        <article class="feature-card" data-tags="website web app mini app link">
+          <h3>Website Link Integration</h3>
+          <p>Paid plans can attach a website URL to launch from Telegram via Web App button directly in main menu.</p>
+        </article>
+        <article class="feature-card" data-tags="analytics statistics export csv excel">
+          <h3>Analytics & Reporting</h3>
+          <p>Shop statistics, sales trends, top products, and exportable reports for operational visibility.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="guides">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">Guides</p>
+          <h2>How to use Telegram E-commerce</h2>
+        </div>
+        <div class="guide-grid">
+          <article class="guide-card" data-reveal>
+            <h3>Quick Start (Shop Owner)</h3>
+            <ol>
+              <li>Create your bot via @BotFather and submit token.</li>
+              <li>Add categories, then products with media, price, and stock.</li>
+              <li>Add payment methods (number/QR/notes).</li>
+              <li>Update welcome/support content and posters.</li>
+              <li>Test checkout with payment proof and admin confirmation.</li>
+              <li>Enable FAQ auto-replies and launch broadcasts.</li>
+            </ol>
+          </article>
+          <article class="guide-card" data-reveal>
+            <h3>Customer Journey</h3>
+            <ol>
+              <li>Browse categories and product details.</li>
+              <li>Select quantity, add to cart, or buy now.</li>
+              <li>Complete profile (phone + shipping address).</li>
+              <li>Choose payment method and transfer funds.</li>
+              <li>Upload payment proof and wait for review.</li>
+              <li>Receive order confirmation and track from My Orders.</li>
+            </ol>
+          </article>
+          <article class="guide-card" data-reveal>
+            <h3>Admin Daily Operations</h3>
+            <ol>
+              <li>Review pending orders and payment proofs.</li>
+              <li>Confirm or reject payments with status updates.</li>
+              <li>Publish deals/news and broadcast campaigns.</li>
+              <li>Maintain FAQ auto-reply buttons for support speed.</li>
+              <li>Monitor stats and export reports regularly.</li>
+              <li>Adjust plan/currency/settings as the shop scales.</li>
+            </ol>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="admin-buttons">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow">Admin Documentation</p>
+        <h2>Admin Panel 1 and Admin Panel 2 button explanations</h2>
+        <p>These are practical explanations for bot owners and admins to understand what each button does and how to use it.</p>
+      </div>
+      <div class="admin-grid">
+        <article class="admin-card" data-reveal>
+          <h3>Admin Side - Admin Panel 1</h3>
+          <p class="muted">These buttons are only available to the bot owner admin.</p>
+          <ol>
+            <li><strong>Manage Orders</strong> - To manage and review customers' orders.</li>
+            <li><strong>Broadcast Message</strong> - To send a message to all customers who use your bot. Useful for promotion and announcement messages.</li>
+            <li><strong>Update Promo/News</strong> - To edit messages for the Promotion and News buttons.</li>
+            <li><strong>Update Caption</strong> - To change and edit captions of each page in the bot.</li>
+            <li><strong>Update Photo</strong> - To change the respective posters/photos of each page in the bot.</li>
+            <li><strong>Manage Admin</strong> - To add new admins or remove existing admins.</li>
+          </ol>
+          <p><strong>Two methods to add a new admin:</strong></p>
+          <p><strong>Forward Contact:</strong> Click this button and select the account you want to make an admin.</p>
+          <p><strong>Generate Key:</strong> A random key is generated. Give this key to the target account, and they must paste and send it to your bot. Each key expires after 1 hour.</p>
+          <ol start="7">
+            <li><strong>Manage Blocked Users</strong> - To view and manage blocked users.</li>
+          </ol>
+        </article>
+
+        <article class="admin-card" data-reveal>
+          <h3>Admin Panel 2 Section</h3>
+          <ol>
+            <li><strong>Add Category</strong> - A category is required before adding products.</li>
+          </ol>
+          <p><strong>Difference between Category and Product:</strong></p>
+          <p>Example 1: Samsung, iPhone, Xiaomi, Oppo, Vivo are products. Collectively they are in the <strong>Phone</strong> category.</p>
+          <p>Example 2: <strong>Computer</strong> is the category; Dell, HP, Acer are products.</p>
+          <p>You must create a category first before adding products.</p>
+
+          <ol start="2">
+            <li><strong>Add Product</strong> - After adding a category, add related products. Add at least one payment method first.</li>
+          </ol>
+          <p><strong>How to add a product:</strong></p>
+          <ul>
+            <li>Go to Add Product.</li>
+            <li>Select a category (or create one first).</li>
+            <li>Step 1: Send product name.</li>
+            <li>Step 2: Send price using English numbers only.</li>
+            <li>Step 3: Send product description/details, or skip.</li>
+            <li>Step 4: Send product photos/videos one by one, then press <strong>Finish</strong>.</li>
+            <li>Final Step: Press <strong>Save Product</strong>.</li>
+          </ul>
+          <p>After saving, customers can see and purchase your product.</p>
+
+          <ol start="3">
+            <li><strong>Manage Payment</strong> - To manage payment accounts such as KBZPay and WavePay.</li>
+            <li><strong>Set Currency</strong> - To select transaction currency (for Myanmar, choose MMK).</li>
+            <li><strong>Manage Automation</strong> - To create FAQ buttons that auto-reply to customers. Create commands first, then link them.</li>
+            <li><strong>Manage Category/Product</strong> - To edit or delete category and product names.</li>
+            <li><strong>Set Up Commands</strong> - Create custom commands and auto-send prepared text/media.</li>
+          </ol>
+          <p><strong>What is a command?</strong> It is a slash command like <code>/start</code>, <code>/share</code>, <code>/mmguid</code>, <code>/engguide</code>.</p>
+          <p><strong>How to set it up:</strong> If you want <code>/info</code> to auto-send contact details, add command name as <code>info</code> (without <code>/</code>), then send text/images and save.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section container" id="pricing">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow">Pricing</p>
+        <h2>Plan prices from bot configuration</h2>
+        <div class="price-controls" role="group" aria-label="Pricing controls">
+          <button class="pill active" data-cycle="yearly">Yearly</button>
+          <button class="pill" data-region="mmk">MMK</button>
+        </div>
+      </div>
+      <div class="price-grid" id="priceGrid" data-cycle="yearly" data-region="mmk">
+        <article class="price-card free" data-reveal>
+          <h3>Free</h3>
+          <p class="price">Free</p>
+          <p class="muted">For testing and small shops</p>
+        </article>
+        <article class="price-card" data-plan="basic" data-reveal>
+          <h3>Basic</h3>
+          <p class="price" data-price>Loading...</p>
+        </article>
+        <article class="price-card" data-plan="standard" data-reveal>
+          <h3>Standard</h3>
+          <p class="price" data-price>Loading...</p>
+        </article>
+        <article class="price-card featured" data-plan="pro" data-reveal>
+          <h3>Pro</h3>
+          <p class="price" data-price>Loading...</p>
+          <p class="badge">Most selected for growth</p>
+        </article>
+        <article class="price-card" data-plan="business" data-reveal>
+          <h3>Business</h3>
+          <p class="price" data-price>Loading...</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="plans">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">Plan Limits</p>
+          <h2>Feature and scaling limits by plan</h2>
+        </div>
+        <div class="table-wrap" data-reveal>
+          <table>
+            <thead>
+              <tr>
+                <th>Plan</th>
+                <th>Categories</th>
+                <th>Products</th>
+                <th>Admins</th>
+                <th>Payment Methods</th>
+                <th>Broadcasts / Month</th>
+                <th>Total Bots</th>
+                <th>Watermark</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Free</td><td>1</td><td>5</td><td>1</td><td>1</td><td>4</td><td>2</td><td>Yes</td></tr>
+              <tr><td>Basic</td><td>5</td><td>25</td><td>3</td><td>3</td><td>13</td><td>3</td><td>Yes</td></tr>
+              <tr><td>Standard</td><td>10</td><td>50</td><td>4</td><td>5</td><td>25</td><td>7</td><td>No</td></tr>
+              <tr><td>Pro</td><td>30</td><td>150</td><td>11</td><td>10</td><td>75</td><td>25</td><td>No</td></tr>
+              <tr><td>Business</td><td>Unlimited</td><td>Unlimited</td><td>Unlimited</td><td>Unlimited</td><td>Unlimited</td><td>50</td><td>No</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="faq">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow">FAQ</p>
+        <h2>Common questions</h2>
+      </div>
+      <div class="faq-list" id="faqList">
+        <article class="faq-item" data-reveal>
+          <button class="faq-q" aria-expanded="false">Can users pay with screenshots as proof?</button>
+          <div class="faq-a"><p>Yes. The checkout flow collects payment proof messages (photos/files) and routes orders for admin review before final confirmation.</p></div>
+        </article>
+        <article class="faq-item" data-reveal>
+          <button class="faq-q" aria-expanded="false">Can I run multiple shop bots?</button>
+          <div class="faq-a"><p>Yes. Bot creation is plan-based. Free starts with 2 total bots, and higher plans increase total allowed bots significantly.</p></div>
+        </article>
+        <article class="faq-item" data-reveal>
+          <button class="faq-q" aria-expanded="false">Is there multilingual support?</button>
+          <div class="faq-a"><p>Yes. The bot supports English and Myanmar language modes, with user-level language preference and localized messages.</p></div>
+        </article>
+        <article class="faq-item" data-reveal>
+          <button class="faq-q" aria-expanded="false">Can I attach a website to the bot menu?</button>
+          <div class="faq-a"><p>Yes. Paid plans can set a website link so users can open it directly from the Telegram menu via Web App integration.</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="container cta-inner" data-reveal>
+        <h2>Ready to publish your Telegram shop?</h2>
+        <p>Use this page as your public product website so visitors understand features, workflow, and pricing before joining.</p>
+        <a href="https://t.me/tg_ecommerce_official_bot" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Try Now</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>Telegram E-commerce Platform</p>
+      <p class="muted">Feature and pricing data mapped from your current bot logic.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
