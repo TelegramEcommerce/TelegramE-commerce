@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms & Conditions - Telegram E-commerce</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* slate-50 */
+        }
+        
+        /* --- Custom Animations --- */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes slideInLeft {
+            from { opacity: 0; transform: translateX(-100%); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        
+        .fade-in {
+            animation: fadeIn 0.8s ease-out forwards;
+        }
+
+        .slide-in-left {
+            animation: slideInLeft 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+        }
+        
+        /* --- Scrollbar Styling --- */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #e2e8f0; /* slate-200 */
+        }
+        ::-webkit-scrollbar-thumb {
+            background-color: #94a3b8; /* slate-400 */
+            border-radius: 10px;
+            border: 2px solid #e2e8f0; /* slate-200 */
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background-color: #64748b; /* slate-500 */
+        }
+
+        /* --- Sidebar Active State --- */
+        .sidebar-link.active {
+            background-color: #e0e7ff; /* indigo-100 */
+            color: #4f46e5; /* indigo-600 */
+            font-weight: 600;
+            border-left-color: #4f46e5; /* indigo-600 */
+        }
+        
+        /* --- Content Section Styling --- */
+        .content-section h2 {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: #1e293b; /* slate-800 */
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.75rem;
+            border-bottom: 1px solid #cbd5e1; /* slate-300 */
+        }
+        
+        .content-section h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #334155; /* slate-700 */
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .content-section p, .content-section ul {
+            color: #475569; /* slate-600 */
+            line-height: 1.7;
+            margin-bottom: 1rem;
+        }
+        
+        .content-section ul {
+            list-style-type: disc;
+            padding-left: 1.5rem;
+        }
+        
+        .content-section strong {
+            color: #1e293b; /* slate-800 */
+        }
+
+        /* --- Mobile Sidebar --- */
+        #mobile-sidebar {
+            transition: transform 0.3s ease-in-out;
+        }
+    </style>
+</head>
+<body class="text-slate-700">
+
+    <!-- Mobile Header -->
+    <header class="sticky top-0 z-30 bg-white/80 backdrop-blur-md shadow-sm lg:hidden">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+             <div class="flex items-center space-x-2">
+                <svg class="w-8 h-8 text-indigo-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+                </svg>
+                <h1 class="text-xl font-bold text-slate-800">T&C</h1>
+            </div>
+            <button id="menu-toggle" class="p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                <svg class="w-6 h-6 text-slate-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <div class="container mx-auto">
+        <div class="flex flex-col lg:flex-row">
+            
+            <!-- Sidebar Navigation -->
+            <aside id="desktop-sidebar" class="hidden lg:block w-full lg:w-1/4 xl:w-1/5 p-8 sticky top-0 h-screen overflow-y-auto bg-white border-r border-slate-200 slide-in-left">
+                 <div class="flex items-center space-x-3 mb-8">
+                    <svg class="w-10 h-10 text-indigo-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+                    </svg>
+                    <div>
+                        <h1 class="text-lg font-bold text-slate-800">Telegram E-commerce</h1>
+                        <p class="text-sm text-slate-500">Terms & Conditions</p>
+                    </div>
+                </div>
+                <nav id="sidebar-nav">
+                    <ul class="space-y-2">
+                        <li><a href="#introduction" class="sidebar-link block py-2 px-4 rounded-lg border-l-4 border-transparent hover:bg-slate-100 transition-colors duration-200">Introduction</a></li>
+                        <li><a href="#definitions" class="sidebar-link block py-2 px-4 rounded-lg border-l-4 border-transparent hover:bg-slate-100 transition-colors duration-200">1. Definitions</a></li>
+                        <li><a href="#service-description" class="sidebar-link block py-2 px-4 rounded-lg border-l-4 border-transparent hover:bg-slate-100 transition-colors duration-200">2. Service Description</a></li>
+                        <li><a href="#roles" class="sidebar-link block py-2 px-4 rounded-lg border-l-4 border-transparent hover:bg-slate-100 transition-colors duration-200">3. Roles & Responsibilities</a></li>
+                        <li><a href="#subscriptions" class="sidebar-link block py-2 px-4 rounded-lg border-l-4 border-transparent hover:bg-slate-100 transition-colors duration-200">4. Subscriptions & Payments</a></li>
+                        <li><a href="#affiliate" class="sidebar-link block py-2 px-4 rounded-lg border-l-4 border-transparent hover:bg-slate-100 transition-colors duration-200">5. Affiliate Program</a></li>
+                        <li><a href="#prohibited" class="sidebar-link block py-2 px-4 rounded-lg border-l-4 border-transparent hover:bg-slate-100 transition-colors duration-200">6. Prohibited Conduct</a></li>
+                        <li><a href="#user-safety" class="sidebar-link block py-2 px-4 rounded-lg border-l-4 border-transparent hover:bg-slate-100 transition-colors duration-200">7. User Safety and Scams</a></li>
+                        <li><a href="#disclaimer" class="sidebar-link block py-2 px-4 rounded-lg border-l-4 border-transparent hover:bg-slate-100 transition-colors duration-200">8. Disclaimer</a></li>
+                        <li><a href="#liability" class="sidebar-link block py-2 px-4 rounded-lg border-l-4 border-transparent hover:bg-slate-100 transition-colors duration-200">9. Limitation of Liability</a></li>
+                        <li><a href="#indemnification" class="sidebar-link block py-2 px-4 rounded-lg border-l-4 border-transparent hover:bg-slate-100 transition-colors duration-200">10. Indemnification</a></li>
+                        <li><a href="#termination" class="sidebar-link block py-2 px-4 rounded-lg border-l-4 border-transparent hover:bg-slate-100 transition-colors duration-200">11. Termination</a></li>
+                        <li><a href="#general" class="sidebar-link block py-2 px-4 rounded-lg border-l-4 border-transparent hover:bg-slate-100 transition-colors duration-200">12. General Provisions</a></li>
+                    </ul>
+                </nav>
+            </aside>
+            
+            <!-- Mobile Sidebar -->
+            <div id="mobile-sidebar" class="fixed top-0 left-0 w-64 h-full bg-white shadow-xl z-40 transform -translate-x-full lg:hidden">
+                <aside class="p-8 h-screen overflow-y-auto">
+                     <div class="flex items-center space-x-3 mb-8">
+                        <svg class="w-10 h-10 text-indigo-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+                        </svg>
+                        <div>
+                            <h1 class="text-lg font-bold text-slate-800">Telegram E-commerce</h1>
+                            <p class="text-sm text-slate-500">Terms & Conditions</p>
+                        </div>
+                    </div>
+                    <nav id="mobile-sidebar-nav">
+                        <!-- Content will be cloned here by JS -->
+                    </nav>
+                </aside>
+            </div>
+            <div id="sidebar-overlay" class="fixed inset-0 bg-black/50 z-30 hidden lg:hidden"></div>
+
+            <!-- Main Content -->
+            <main class="w-full lg:w-3/4 xl:w-4/5 p-6 sm:p-8 lg:p-12">
+                <div class="max-w-4xl mx-auto fade-in">
+                    <div class="mb-12">
+                        <h1 class="text-4xl font-bold text-slate-900 mb-2">Terms and Conditions</h1>
+                        <p class="text-slate-500">Last Updated: <span class="font-semibold text-slate-600">October 17, 2025</span></p>
+                    </div>
+
+                    <div id="introduction" class="content-section scroll-mt-24">
+                        <h2>Introduction</h2>
+                        <p>Welcome to Telegram E-commerce. These Terms and Conditions ("Terms") constitute a legally binding agreement between you and the operators of the Telegram E-commerce platform. These Terms govern your access to and use of our services, including the main platform bot, the software used to create e-commerce bots, and any associated features or infrastructure (collectively, the "Service").</p>
+                        <p>By accessing the Service, creating an e-commerce bot through our platform, or interacting with a bot created on our platform, you acknowledge that you have read, understood, and agree to be bound by these Terms. If you do not agree with these Terms in their entirety, you must not use the Service.</p>
+                    </div>
+
+                    <div id="definitions" class="content-section scroll-mt-24">
+                        <h2>1. Definitions</h2>
+                        <ul>
+                            <li><strong>"Platform," "We," "Us," or "Our":</strong> Refers to the Telegram E-commerce Service, its owners, and operators, accessible via the main bot (<code>@tg_ecommerce_official_bot</code>).</li>
+                            <li><strong>"Bot Creator" or "Admin":</strong> Any user who utilizes our Service to create, manage, and operate their own individual e-commerce bot.</li>
+                            <li><strong>"Shop Bot":</strong> An individual e-commerce bot created by a Bot Creator using our Platform. Each Shop Bot functions as an independent storefront.</li>
+                            <li><strong>"End-User" or "Customer":</strong> Any user who interacts with a Shop Bot to browse products, make inquiries, or conduct a purchase.</li>
+                            <li><strong>"User":</strong> A collective term referring to Bot Creators, End-Users, and any other individual interacting with the Service.</li>
+                            <li><strong>"Content":</strong> Any data, text, product information, descriptions, prices, images, videos, graphics, custom commands, or other materials uploaded, displayed, or transmitted by a Bot Creator through their Shop Bot.</li>
+                             <li><strong>"Subscription Plan":</strong> The set of features and limitations associated with a Bot Creator's account, which may include "Free," "Standard," "Pro," and "Business" tiers.</li>
+                        </ul>
+                    </div>
+
+                    <div id="service-description" class="content-section scroll-mt-24">
+                        <h2>2. Description of Service</h2>
+                        <p>The Telegram E-commerce Platform is a Software-as-a-Service (SaaS) tool that provides Bot Creators with the technology to build, customize, and operate their own e-commerce storefronts within the Telegram messaging application. We provide the underlying software, bot hosting infrastructure, and management features.</p>
+                        <p><strong>Crucially, the Platform is a technology provider, not a marketplace, retailer, or party to any transaction.</strong> All sales transactions, communications, and agreements that occur on a Shop Bot are strictly between the Bot Creator and the End-User. We do not process payments, handle shipping, manage inventory, or provide customer support for any Shop Bot.</p>
+                    </div>
+
+                    <div id="roles" class="content-section scroll-mt-24">
+                        <h2>3. Roles and Responsibilities</h2>
+                        <h3>3.1. Our Responsibilities (The Platform)</h3>
+                        <ul>
+                            <li>To use commercially reasonable efforts to maintain the availability and functionality of the Platform's core services.</li>
+                            <li>To manage the technical process of bot creation, subscription plan features, and account downgrades upon plan expiration.</li>
+                            <li>To process and review subscription upgrade requests based on the manual proof-of-payment system.</li>
+                            <li>We reserve the right to modify, suspend, or discontinue any part of the Service at any time, with or without prior notice.</li>
+                            <li>We reserve the absolute right to terminate, suspend, or remove any Shop Bot or User account that we, in our sole discretion, determine to be in violation of these Terms.</li>
+                        </ul>
+                         <h3>3.2. Bot Creator Responsibilities</h3>
+                        <ul>
+                            <li><strong>Sole Responsibility:</strong> As a Bot Creator, you are solely and entirely responsible for your Shop Bot, its Content, and all activities conducted through it.</li>
+                            <li><strong>Products and Content:</strong> You are responsible for the legality, accuracy, quality, pricing, and intellectual property rights of all products you sell and Content you display. You warrant that you have all necessary rights and licenses to sell your products and use your Content.</li>
+                            <li><strong>Order Fulfillment & Customer Service:</strong> You are solely responsible for managing inventory, fulfilling all orders, handling shipping, and providing all customer support to your End-Users. All inquiries, complaints, disputes, refunds, and returns must be handled directly by you.</li>
+                            <li><strong>Legal Compliance:</strong> You agree to comply with all applicable local, national, and international laws, regulations, and tax obligations related to your e-commerce activities.</li>
+                            <li><strong>Security:</strong> You are responsible for safeguarding your Bot API Token and for the actions of any additional Admins you appoint to your Shop Bot.</li>
+                        </ul>
+                         <h3>3.3. End-User Responsibilities</h3>
+                        <ul>
+                            <li><strong>Direct Transaction:</strong> You acknowledge that any purchase made through a Shop Bot creates a direct contract between you and the Bot Creator of that Shop Bot. Telegram E-commerce is not a party to this contract.</li>
+                            <li><strong>Due Diligence:</strong> You are responsible for conducting your own due diligence before making a purchase. The Platform does not vet, endorse, or guarantee any Bot Creator, their products, or the accuracy of their listings.</li>
+                            <li><strong>Dispute Resolution:</strong> You agree to resolve any and all issues, disputes, or claims related to a purchase—including product quality, non-delivery, refunds, or misrepresentation—directly with the respective Bot Creator. The Platform will not mediate or be involved in such disputes.</li>
+                        </ul>
+                    </div>
+
+                    <div id="subscriptions" class="content-section scroll-mt-24">
+                        <h2>4. Subscriptions & Payments</h2>
+                         <ul>
+                            <li><strong>Subscription Tiers:</strong> Bot Creators can choose from various Subscription Plans, each offering a different set of features and limits.</li>
+                            <li><strong>Upgrades:</strong> To upgrade to a paid plan, a Bot Creator must manually transfer the required subscription fee to the payment account provided by Us and submit valid proof of payment. The upgrade will only be activated after Our manual review and confirmation.</li>
+                            <li><strong>No Refunds:</strong> All subscription fees paid to the Platform are final and non-refundable.</li>
+                            <li><strong>Expiration and Downgrade:</strong> Upon the expiration of a paid Subscription Plan, the associated Shop Bot will be automatically downgraded to the Free Plan. This may result in the loss of data, features, and functionality. It is the Bot Creator's responsibility to renew their subscription in a timely manner.</li>
+                            <li><strong>Fee Modifications:</strong> We reserve the right to modify our subscription fees at any time. We will provide reasonable notice of any such changes.</li>
+                        </ul>
+                    </div>
+                    
+                    <div id="affiliate" class="content-section scroll-mt-24">
+                        <h2>5. Affiliate Program</h2>
+                        <p>The Platform operates a global affiliate program.</p>
+                        <ul>
+                            <li><strong>Referral:</strong> Users can use a unique referral link to invite new Bot Creators to the Platform.</li>
+                            <li><strong>Commission:</strong> A referrer is eligible to earn a commission, as specified by the program, only when a user they directly referred successfully purchases or upgrades to a paid Subscription Plan.</li>
+                            <li><strong>Prohibited Activities:</strong> Self-referrals, creating multiple accounts to abuse the system, spamming referral links, or any other fraudulent activity is strictly prohibited and will result in the forfeiture of all commissions and potential termination of all associated accounts.</li>
+                            <li><strong>Payouts:</strong> Commission payout terms and schedules will be determined and communicated by the Platform separately. We reserve the right to modify the affiliate program terms at any time.</li>
+                        </ul>
+                    </div>
+
+                    <div id="prohibited" class="content-section scroll-mt-24">
+                        <h2>6. Prohibited Conduct and Content</h2>
+                        <p>You may not use the Service to create, manage, or promote a Shop Bot that involves any of the following:</p>
+                        <ul>
+                            <li>Any illegal goods, services, or activities under applicable law.</li>
+                            <li>Firearms, weapons, ammunition, explosives, and related parts.</li>
+                            <li>Controlled substances, narcotics, illegal drugs, or drug paraphernalia.</li>
+                            <li>Stolen, counterfeit, or fraudulent goods.</li>
+                            <li>Content that is hateful, defamatory, threatening, pornographic, or incites violence.</li>
+                            <li>Content that infringes upon any third-party intellectual property rights (e.g., copyright, trademark).</li>
+                            <li>Multi-level marketing (MLM) schemes, pyramid schemes, or gambling.</li>
+                            <li>The sale of personal data or any violation of privacy laws.</li>
+                        </ul>
+                        <p>Furthermore, all Users agree not to attempt to interfere with, compromise the system integrity or security of, or decipher any transmissions to or from the servers running the Service; use the Service for spamming, phishing, or sending any form of unsolicited communications; or reverse-engineer, decompile, or otherwise attempt to discover the source code of the Platform.</p>
+                        <p>Violation of this section may result in the immediate and permanent termination of your Shop Bot and/or User account without notice or refund.</p>
+                    </div>
+
+                    <div id="user-safety" class="content-section scroll-mt-24">
+                        <h2>7. User Safety and Scams</h2>
+                        <p>As a technology provider, the Telegram E-commerce platform facilitates the creation of independent Shop Bots but has no direct involvement in the transactions or interactions that occur on them. You, as a User, are responsible for your own safety and due diligence.</p>
+                        <p><strong>Beware of scams and fraudulent activities.</strong> We do not verify the identity of Bot Creators, nor do we vet the authenticity or quality of the products they list. Any transaction you enter into is at your own risk.</p>
+                        <p>Should you encounter a scam, fraud, or any illegal activity on a Shop Bot, we encourage you to report it to Telegram's official support channels and relevant local authorities. However, <strong>Telegram E-commerce is not responsible for any financial loss, damages, or other consequences arising from such incidents.</strong> Our role is limited to providing the software service for Bot Creators to build their storefronts.</p>
+                    </div>
+
+                    <div id="disclaimer" class="content-section scroll-mt-24">
+                        <h2>8. Disclaimer of Warranties</h2>
+                        <p>THE SERVICE IS PROVIDED ON AN "AS IS" AND "AS AVAILABLE" BASIS, WITHOUT ANY WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT.</p>
+                        <p>WE DO NOT WARRANT THAT: (A) THE SERVICE WILL BE SECURE, UNINTERRUPTED, OR ERROR-FREE; (B) ANY DEFECTS OR ERRORS WILL BE CORRECTED; OR (C) THE SERVICE IS FREE OF VIRUSES OR OTHER HARMFUL COMPONENTS.</p>
+                        <p>WE EXPLICITLY DISCLAIM ANY AND ALL RESPONSIBILITY AND LIABILITY FOR THE CONDUCT OF BOT CREATORS AND THE QUALITY, SAFETY, LEGALITY, OR ACCURACY OF ANY PRODUCTS SOLD ON ANY SHOP BOT.</p>
+                    </div>
+
+                    <div id="liability" class="content-section scroll-mt-24">
+                        <h2>9. Limitation of Liability</h2>
+                        <p>TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL TELEGRAM E-COMMERCE, ITS OWNERS, AFFILIATES, DIRECTORS, OR EMPLOYEES BE LIABLE FOR ANY INDIRECT, PUNITIVE, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR EXEMPLARY DAMAGES, INCLUDING WITHOUT LIMITATION DAMAGES FOR LOSS OF PROFITS, GOODWILL, USE, DATA, OR OTHER INTANGIBLE LOSSES, THAT RESULT FROM THE USE OF, OR INABILITY TO USE, THIS SERVICE.</p>
+                        <p>OUR TOTAL AGGREGATE LIABILITY TO YOU FOR ALL CLAIMS ARISING OUT OF OR RELATING TO THESE TERMS OR YOUR USE OF THE SERVICE IS LIMITED TO THE GREATER OF (A) THE AMOUNT OF FEES PAID BY YOU TO US FOR THE SERVICE IN THE 12 MONTHS PRIOR TO THE CLAIM OR (B) ONE HUNDRED U.S. DOLLARS ($100.00).</p>
+                    </div>
+
+                    <div id="indemnification" class="content-section scroll-mt-24">
+                        <h2>10. Indemnification</h2>
+                        <p>You agree to defend, indemnify, and hold harmless Telegram E-commerce and its owners, employees, and agents from and against any and all claims, damages, obligations, losses, liabilities, costs, or debt, and expenses (including but not limited to attorney's fees) arising from: (i) your use of and access to the Service; (ii) your violation of any term of these Terms; (iii) your violation of any third-party right, including without limitation any copyright, property, or privacy right; or (iv) any claim that your Content or the products you sell caused damage to a third party.</p>
+                    </div>
+
+                    <div id="termination" class="content-section scroll-mt-24">
+                        <h2>11. Termination</h2>
+                        <ul>
+                            <li><strong>By You:</strong> A Bot Creator may stop using the service at any time. Termination does not entitle you to a refund of any subscription fees paid.</li>
+                            <li><strong>By Us:</strong> We may, in our sole discretion, suspend or terminate your access to all or part of the Service, including your Shop Bot, at any time, with or without notice, for any reason, including, without limitation, a breach of these Terms.</li>
+                            <li><strong>Effect of Termination:</strong> Upon termination, all your rights to use the Service will cease immediately. We are not obligated to retain your Content or data and may delete it permanently.</li>
+                        </ul>
+                    </div>
+
+                    <div id="general" class="content-section scroll-mt-24">
+                        <h2>12. General Provisions</h2>
+                        <ul>
+                            <li><strong>Changes to Terms:</strong> We reserve the right to modify these Terms at any time. We will provide notice of significant changes by posting the new Terms on our main bot or through other communication channels. Your continued use of the Service after such changes constitutes your acceptance of the new Terms.</li>
+                            <li><strong>Governing Law:</strong> These Terms shall be governed by the laws of the jurisdiction in which the Platform operators are based, without regard to its conflict of law principles.</li>
+                            <li><strong>Entire Agreement:</strong> These Terms constitute the entire agreement between you and Telegram E-commerce concerning the Service and supersede all prior agreements.</li>
+                            <li><strong>Contact:</strong> For questions regarding these Terms, please contact the Platform administrators through the designated support channels.</li>
+                        </ul>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-6 right-6 bg-indigo-600 text-white p-3 rounded-full shadow-lg hover:bg-indigo-700 transition-all duration-300 opacity-0 translate-y-4">
+        <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
+        </svg>
+    </button>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const sections = document.querySelectorAll('.content-section');
+            const sidebarLinks = document.querySelectorAll('.sidebar-link');
+            const backToTopButton = document.getElementById('back-to-top');
+            
+            // --- Mobile Menu ---
+            const menuToggle = document.getElementById('menu-toggle');
+            const mobileSidebar = document.getElementById('mobile-sidebar');
+            const sidebarOverlay = document.getElementById('sidebar-overlay');
+            const desktopNav = document.getElementById('sidebar-nav');
+            const mobileNavContainer = document.getElementById('mobile-sidebar-nav');
+
+            // Clone desktop nav to mobile
+            mobileNavContainer.innerHTML = desktopNav.innerHTML;
+            const mobileSidebarLinks = mobileNavContainer.querySelectorAll('.sidebar-link');
+
+            const openMenu = () => {
+                mobileSidebar.classList.remove('-translate-x-full');
+                sidebarOverlay.classList.remove('hidden');
+            };
+            const closeMenu = () => {
+                mobileSidebar.classList.add('-translate-x-full');
+                sidebarOverlay.classList.add('hidden');
+            };
+
+            menuToggle.addEventListener('click', openMenu);
+            sidebarOverlay.addEventListener('click', closeMenu);
+
+            const allLinks = [...sidebarLinks, ...mobileSidebarLinks];
+
+            allLinks.forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const targetId = link.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        targetElement.scrollIntoView({ behavior: 'smooth' });
+                    }
+                    if (window.innerWidth < 1024) {
+                        closeMenu();
+                    }
+                });
+            });
+
+            // --- Scrollspy & Active Link Highlighting ---
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.3
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const id = entry.target.getAttribute('id');
+                        allLinks.forEach(link => {
+                            link.classList.remove('active');
+                            if (link.getAttribute('href') === `#${id}`) {
+                                link.classList.add('active');
+                            }
+                        });
+                    }
+                });
+            }, observerOptions);
+
+            sections.forEach(section => observer.observe(section));
+
+            // --- Back to Top Button ---
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 300) {
+                    backToTopButton.classList.remove('opacity-0', 'translate-y-4');
+                } else {
+                    backToTopButton.classList.add('opacity-0', 'translate-y-4');
+                }
+            });
+
+            backToTopButton.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+            
+            // --- Add scroll reveal animation to sections ---
+            const revealObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('fade-in');
+                        // Optional: unobserve after revealing
+                        // revealObserver.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            sections.forEach(section => {
+                section.style.opacity = '0'; // Start invisible for animation
+                revealObserver.observe(section);
+            });
+        });
+    </script>
+</body>
+</html>
+
